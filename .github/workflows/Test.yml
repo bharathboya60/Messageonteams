@@ -4,5 +4,6 @@ on: [push, pull_request]
 
 jobs:
   steps:
-    run: |
+    - uses: actions/checkout@v2
+    - run: |
           echo "Executing Docker System Prune"
