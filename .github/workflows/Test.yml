@@ -1,10 +1,15 @@
-name: Nabu Docker Git Action
+name: Print Text Example
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
 
-build:
 jobs:
-  steps:
-    uses: actions/checkout@v2
-    run: |
-          echo "Executing Docker System Prune"
+  print-text:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Text
+      run: |
+        echo "Your Text Here"
