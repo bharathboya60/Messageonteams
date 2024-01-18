@@ -7,7 +7,7 @@ on:
 
 jobs:
   print-text:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
 
     steps:
     - name: Print Text
