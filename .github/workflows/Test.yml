@@ -2,8 +2,9 @@ name: Nabu Docker Git Action
 
 on: [push, pull_request]
 
+build:
 jobs:
   steps:
-    - uses: actions/checkout@v2
-    - run: |
+    uses: actions/checkout@v2
+    run: |
           echo "Executing Docker System Prune"
