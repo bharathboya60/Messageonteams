@@ -31,12 +31,12 @@ jobs:
         # connection_url: smtp+starttls://${{secrets.MAIL_USERNAME}}:${{secrets.MAIL_PASSWORD}}@smtp.office365.com:587
         # connection_url: ${{secrets.MAIL_CONNECTION}}
         # Required mail server address if not connection_url:
-        server_address: smtp.office365.com
+        server_address: outlook.office365.com
         # # Server port, default 25:
         server_port: 587
-        Encryption method: STARTTLS or TLS
+        # Encryption method: STARTTLS or TLS
         # Optional whether this connection use TLS (default is true if server_port is 465)
-        secure: true
+        secure: false
         # Optional (recommended) mail server username:
         username: ${{secrets.MAIL_USERNAME}}
         # # Optional (recommended) mail server password:
