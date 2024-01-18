@@ -7,10 +7,12 @@ on:
 
 jobs:
   print-text:
-    # runs-on: ubuntu-latest
-    uses: actions/checkout@v2
-
+    runs-on: ubuntu-latest
     steps:
     - name: Print Text
       run: |
         echo "Your Text Here"
+
+    - name: Print text 2
+      run: |
+        echo "text 2"
