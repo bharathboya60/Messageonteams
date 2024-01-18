@@ -8,6 +8,7 @@ on:
 jobs:
   print-text:
     # runs-on: ubuntu-latest
+    uses: actions/checkout@v2
 
     steps:
     - name: Print Text
