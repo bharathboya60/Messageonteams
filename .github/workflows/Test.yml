@@ -9,11 +9,10 @@ jobs:
   print-text:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Print Text
       run: |
         echo "Your Text Here"
-    - uses: actions/checkout@v2
-    - name: Print text 2
-      run: |
-        echo "text 2"
+    - uses: neonidian/teams-notify-build-status@v3
+    with:
+      webhookUrl: ${{ https://modakanalytics0.webhook.office.com/webhookb2/b797f83f-c39b-4c04-b995-5194290b25c7@fdcf6fad-c3f0-4c66-8ca1-1e3aaac65150/IncomingWebhook/388611a9488c4b9f8ce35958fbdc3b35/ccaee18c-5c2b-4e8f-aa87-a31fdece97bd }}   # Secret name is "TEAMS_INCOMING_WEBHOOK_URL"
+      message: Workflow run passed !!
